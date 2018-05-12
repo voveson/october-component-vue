@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>\{{ name }} Component</h1>
+    <h1>{{ name }} Component</h1>
   </div>
 </template>
 
