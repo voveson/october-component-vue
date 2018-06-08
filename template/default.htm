@@ -1,1 +1,16 @@
-<div id="{{ name }}"></div>
+{% put scripts %}
+<script>
+  new Vue({
+    el: '#{{ name }}-vue',
+    data: {
+      all: {
+      	// model: {{ model | json_encode | raw }}
+      }
+    }
+  });
+</script>
+{% endput %}
+
+<div id="{{ name }}-vue">
+  <app v-bind="all"></app>
+</div>

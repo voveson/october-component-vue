@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import _ from 'lodash'
 
-new Vue({
-  el: '#{{ name }}',
-  render: h => h(App)
-})
+window.Vue = Vue;
+window._ = _;
+
+Vue.component('app', App);
